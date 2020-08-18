@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <style>
+    .header {
+      background-color: #003399;
+        height: 60px;
+        color:#ffffff;
+        font-size: 40px;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+    
+        img {
+            height: 50px;            
+        }
+        @media only screen and (max-width:600px) {
+            .header-text {
+                font-family: Verdana;
+                font-size: large;
+            }
+        }
+            section {
+                border: solid 1px black;
+                height: 90vh;
+            }
+            
+            footer {
+                height: 60px;
+                background-color: #b3b3b3;
+                color: #000000;
+                text-align: left;
+            }
+            #button{
+                border: none;
+                background-color: #ffffff;
+                color: #000000;
+                padding: auto;
+            }
+            #table{
+                width: 100%;
+                align-items: center;
+                padding: 10px;
+            }
+            th, td{
+                padding: 5px;
+                text-align: center;
+            }
+            .alert{
+                color: #66cc99;
+            }
+            
+            
+      </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body> 
+    <div class="header">&ensp;truYum&ensp;<img src="cognizant.jpg"/> </div>
+    <div class="header" style="font-size: 20px; text-align: right; color:#ffffff;">
+        <a href="menu-item-list-customer.html"style="color: #ffffff; padding: 20px;"><u>Menu</u></a>
+        <a href="cart.html"style="color: #ffffff; padding: 20px;"><u>Cart</u></a>
+        </div>
+   </div>
+    <section>
+        <script>
+            function removed(){
+                    var str=new String("Item removed from Cart successfully");
+                    //fontcolor("#66cc99": str):str);
+                    alert(str);
+            }
+            function calculate(){
+                var num1=Number(document.getElementById('p1').value);  
+                var num2=Number(document.getElementById('p2').value);  
+                var num3=Number(document.getElementById('p3').value);  
+                var tot=num1+num2+num3;
+                ducument.write(tot);
+                          }
+            
+        </script>
+<h1 style="text-align:center;"> Menu Items</h1>
+<table id="table">
+    <tr>
+        
+        <th><b>Name</b></th>
+        <th><b>Free Delivery</b></th>
+        <th><b>Price</b></th>
+        <th></th>
+      
+    </tr>
+    <tr>
+        <td>Sandwich</td>
+        <td>Yes</td>
+        <td id="p1">Rs. 99.00</td>
+        <td><button id="button" value="removed"  onclick="removed();"><u> Delete</u></button></td>
+    </tr>
+    <tr>
+        <td>Burger</td>
+        <td>No</td>
+        <td id="p2">Rs. 129.00</td>
+        <td><button id="button" value="removed" onclick="removed();"><u> Delete</u></button></td>
+    </tr>
+    
+</table>
+    <p style="text-align: center;">
+        <b>Total Rs. 228.00</b>
+    </p>
+
+    </section>
+    <footer>Copyright &copy; 2020</footer>
+</body>
+</html>

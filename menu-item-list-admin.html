@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <style>
+    .header {
+      background-color: #003399;
+        height: 60px;
+        color:#ffffff;
+        font-size: 40px;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+    
+        img {
+            height: 50px;            
+        }
+        @media only screen and (max-width:600px) {
+            .header-text {
+                font-family: Verdana;
+                font-size: large;
+            }
+        }
+            section {
+                border: solid 1px black;
+                height: 90vh;
+            }
+            
+            footer {
+                height: 60px;
+                background-color: #b3b3b3;
+                color: #000000;
+                text-align: left;
+            }
+            #button{
+                border: none;
+                background-color: #ffffff;
+                color: #000000;
+                padding: auto;
+            }
+            #table{
+                width: 100%;
+                align-items: center;
+                padding: 10px;
+            }
+            th, td{
+                padding: 5px;
+                text-align: center;
+            }
+            
+            
+      </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body> 
+        <div class="header">&ensp;truYum&ensp;<img src="cognizant.jpg"/> </div>
+        <div class="header" style="font-size: 20px; text-align: right; color:#ffffff;">
+            <a href="menu-item-list-admin.html"style="color: #ffffff; padding: 20px;"><u>Menu</u></a>
+   </div>
+    <section>
+        <script>
+            function added(){
+                    alert("Item added to Cart");
+            }
+            
+        </script>
+<h1 style="text-align:center;"> Menu Items</h1>
+<table id="table">
+    <tr>
+        
+        <th><b>Name</b></th>
+        <th><b>Price</b></th>
+        <th><b>Date of Launch</b></th>
+        <th><b>Category</b></th>
+        <th><b>Free Delivery</b></th>
+        <th><b>Action </b></th>
+        
+    </tr>
+    <tr>
+        <td>Sandwich</td>
+        <td>Rs. 99.00</td>
+        <td>Yes</td>
+        <td>15/03/2017</td>
+        <td>Main Course</td>
+        <td>Yes</td>
+        <td><button id="button" value="Add to cart" id="addCart" onclick="added();">Edit</button></td>
+    </tr>
+    <tr>
+        <td>Burger</td>
+        <td>Rs. 129.00</td>
+        <td>Yes</td>
+        <td>23/12/2017</td>
+        <td>Main Course</td>
+        <td>No</td>
+        <td><button id="button" value="Add to cart" id="addCart" onclick="added();">Edit</button></td>
+    </tr>
+    <tr>
+        <td>Pizza</td>
+        <td>Rs. 149.00</td>
+        <td>Yes</td>
+        <td>21/08/2017</td>
+        <td>Main Course</td>
+        <td>No</td>
+        <td><button id="button" value="Add to cart" id="addCart" onclick="added();">Edit</button></td>
+    </tr>
+    <tr>
+        <td>French Fries</td>
+        <td>Rs. 57.00</td>
+        <td>No</td>
+        <td>02/07/2017</td>
+        <td>Starters</td>
+        <td>Yes</td>
+        <td><button id="button" value="Add to cart" id="addCart" onclick="added();">Edit</button></td>
+    </tr>
+    <tr>
+        <td>Chocolate Brownie</td>
+        <td>Rs. 32.00</td>
+        <td>Yes</td>
+        <td>02/11/2022</td>
+        <td>Dessert</td>
+        <td>Yes</td>
+        <td><button id="button" value="Add to cart" id="addCart" onclick="added();">Edit</button></td>
+    </tr>
+</table>
+
+
+    </section>
+    <footer>Copyright &copy; 2020</footer>
+</body>
+</html>
